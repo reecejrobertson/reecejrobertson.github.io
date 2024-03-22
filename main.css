@@ -3,6 +3,10 @@ body {
     padding: 0;
 }
 
+div {
+    padding: 10px;
+}
+
 nav {
     background-color: darkcyan;
 }
