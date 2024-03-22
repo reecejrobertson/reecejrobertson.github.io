@@ -1,10 +1,11 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
+html,
+body {
     background-color: #f2f2f2;
     font-family: 'Montserrat', sans-serif;
     font-size: large;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 nav {
@@ -12,13 +13,13 @@ nav {
 }
 
 nav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 7px 8px;
-    text-decoration: none;
     border-radius: 10px;
+    color: #f2f2f2;
+    float: left;
     margin: 10px 5px;
+    padding: 7px 8px;
+    text-align: center;
+    text-decoration: none;
 }
 
 nav a:hover {
@@ -27,7 +28,7 @@ nav a:hover {
 
 nav a.active {
     background-color: #551A8B;
-    color: white
+    color: #f2f2f2
 }
 
 .bio {
@@ -36,10 +37,10 @@ nav a.active {
 }
 
 .card {
+    border-radius: 25px;
     box-shadow: 0 4px 8px 0 #00000033;
     display: block;
     flex-basis: 25%;
-    border-radius: 25px;
     margin: 20px;
 }
 
@@ -50,23 +51,23 @@ nav a.active {
 .card-info ul {
     list-style: none;
     margin: 0;
-    padding: 0;
     margin: 25px 0;
+    padding: 0;
 }
 
 .container {
-    display: flex;
-    justify-content: space-evenly;
     align-items: center;
+    display: flex;
     flex-grow: 1;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .card-pic {
-    width: 100%;
     -moz-border-radius: 0px;
     -webkit-border-radius: 25px 25px 0px 0px;
     border-radius: 25px 25Spx 0px 0px;
+    width: 100%;
 }
 
 .content {
@@ -74,9 +75,9 @@ nav a.active {
 }
 
 .homepage-box {
-    height: 100%;
     display: flex;
     flex-flow: column;
+    height: 100%;
 }
 
 .nonflex-nav {
