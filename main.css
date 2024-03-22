@@ -17,6 +17,7 @@ nav {
     transition: 0.3s;
     display: block;
     flex-basis: 30%;
+    padding: 10px;
 }
 
 .card:hover {
@@ -30,4 +31,8 @@ nav {
 .content {
     margin: 50px;
     display: flex;
+}
+
+.profile-pic {
+    width: 100%;
 }
