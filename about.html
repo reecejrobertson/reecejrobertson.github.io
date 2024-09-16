@@ -38,26 +38,54 @@
             </p>
             <h2>Past Research</h2>
             <p>
-                During my undergraduate degree I studied applied mathematics and computer science at Brigham Young University, thus my interest and skill set lies in the realm of quantum algorithms.
-                In an effort to make quantum algorithms more accessible in this time of noisy, intermediate-scale quantum computers, I studied a new form of quantum algorithm simulation which I referred to as quantum <i>emulation.</i>
-                Emulation differs from simulation in one important respect: quantum simulation aims to mathematically replicate every step of a quantum algorithm on a classical computer, while quantum emulation uses an existing classical algorithm to abstract an entire quantum simulation into a single optimized computation.
+                I have completed two main research projects, described below.
             </p>
             <p>
-                This was exciting work that allowed me to perform quantum algorithm simulations of large problems.
-                As part of my undergraduate honors thesis, I emulated an instance of Shor's famous integer factoring algorithm involving over 40 qubits on my laptop computer, which was over twice as many qubits as I could reliably simulate on the same device.
-                Thus, my emulator allows quantum algorithm developers to work on <i>noiseless</i> intermediate-scale classical simulations that are comparable to current quantum computers.
+                <strong>UNIQuE: The Unconventional Intermediate Noiseless Quantum Emulator.</strong>
+                During my undergraduate degree I studied an approach to quantum algorithm simulation which I termed quantum <emp>emulation</emp>.
+                Traditionally, when one is simulating a quantum algorithm on a classical computer one represents each quantum operation with a matrix, and combines operations through matrix multiplication.
+                These matrices scale exponentially in size as the number of qubits modeled increases.
+                Quantum emulation, on the other hand, aims to improve this scaling through the use of optimized classical functions.
+                That is, rather than replicating each step of a quantum algorithm classically, a quantum emulator uses an optimized classical function to perform an algorithm directly.
+                The resulting output is identical to what would be achieved on a noiseless quantum computer (or simulator), and is obtained with fewer operations than the simulator requires.
+                In my project I built the first open-source quantum emulator, and gave it functions for performing arithmetic operations, the quantum Fourier transform, and quantum phase estimations.
+                I used these functions to emulate Shor's quantum factoring algorithm on a problem that is out of reach for quantum simulators and most current quantum hardware (probably all hardware when considering current error rates).
+            </p>
+            <p>
+                <strong>On the Baltimore Light RailLink into the Quantum Future.</strong>
+                The first paper resulting from my PhD work regards the Baltimore Light Rail.
+                My collaborators and I mapped the problem of setting a schedule for the trains of the Light Rail system into a form executable on quantum computers.
+                We ran this algorithm on both an adiabatic D-Wave quantum annealer, and on a gate-based trapped-ion IonQ quantum computer.
+                We found that the algorithm ran much more efficiently on the adiabatic device for this problem.
+                The paper produced from this research is currently under review for publication.
+            </p>
+            <h2>Current Research</h2>
+            <p>
+                Using the skills I developed in my prior projects, I am now working on several other exciting problems.
+                One project I am currently pursuing is the following.
+            </p>
+            <p>
+                <strong>Algorithmic Error in Simon's Algorithm.</strong>
+                It is well known that quantum computations are prone to error.
+                Somewhat less well known is how exactly these errors affect quantum algorithms.
+                I am currently conducting a two-pronged study of error with regards to Simon's hidden subgroup algorithm.
+                The first project, now completed and submitted for review, was a study of how much error is observed when running Simon's algorithm on current Noisy, Intermediate-Scale Quantum (NISQ) devices.
+                The second project, currently underway, is a study of how much error Simon's algorithm can tolerate and still retain a speedup over the corresponding classical algorithm for the same problem.
             </p>
             <h2>Future Research</h2>
             <p>
                 All signs indicate that large quantum computers are on the horizon.
-                IBM, one of the global leaders in quantum technologies, has predicted that they will build a computer with <a href='https://www.ibm.com/quantum/roadmap'>several thousand qubits by 2026</a>, and they may attain hundreds of thousands by the end of the decade.
-                The amount of processing power quantum computers of this size may leverage is unfathomable, surpassing what would be achieved by a classical computer made from every atom in the known universe.
+                IBM, one of the global leaders in quantum technologies, has predicted that they will build a computer with several thousand qubits by 2026, and they may attain hundreds of thousands by the end of the decade<sup>1</sup>.
+                With favorable error rates, the amount of processing power quantum computers of this size may leverage is unfathomable.
             </p>
             <p>
-                The potential applications of these quantum computers is likewise limitless.
-                With the proper algorithms we could use these computers to model chemical systems to aid in drug development, to optimally lay out qubit placement to design even better quantum computers, and to realize Feynman's original dream of fully modeling a quantum system, to name just a few potential applications.
+                The potential applications of these quantum computers is likewise enormous.
+                With the proper algorithms we could use these computers to model chemical systems for drug development, to optimally lay out qubit placement to design even better quantum computers, and to realize Feynman's original dream of fully modeling a quantum system, to name just a few potential applications.
                 My future work will be devoted to developing efficient, error resistant algorithms to solve these problems.
                 I will study methods of speeding up existing classical algorithms on a quantum computer, as well as working to design original algorithms that fully leverage the quantum effects of superposition, entanglement, and measurement.
+            </p>
+            <p>
+                1. <a href="https://www.ibm.com/quantum/roadmap">https://www.ibm.com/quantum/roadmap</a>
             </p>
         </div>
     </div>
