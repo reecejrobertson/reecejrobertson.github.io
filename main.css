@@ -241,8 +241,10 @@ section.about-section {
         padding: 7vw 4vw 7vw;
     }
     h1.heading {
-        padding-top: 4vw;
+        padding-top: 6vw;
         font-size: 10vw;
+        line-height: 10vw;
+        margin-bottom: 3vw;
     }
     h2.subheading {
         font-size: 6vw;
