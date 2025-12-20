@@ -78,6 +78,7 @@ ul.navbar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    font-size: 3vh;
 }
 
 #collapsible-header {
@@ -87,8 +88,10 @@ ul.navbar {
 #nav-toggler {
     background-color: #000000;
     margin-right: 10vw;
-    width: 2rem;
-    height: 2rem;
+    width: 4vh;
+    height: 4vh;
+    font-size: 2.5vh;
+    text-align: center;
     border-radius: 25%;
     color: #fff;
     font-weight: 600;
@@ -228,13 +231,35 @@ section.about-section {
 }
 
 @media (max-width: 991px) {
+    body {
+        font-size: 2.5vh;
+    }
     nav {
         display: none;
     }
     div.resume-section {
-        padding-top: 5rem;
+        padding: 5vh 2vh 5vh;
     }
     h1.heading {
-        padding-top: 2rem;
+        padding-top: 2vh;
+        font-size: 8vh;
+    }
+    h2.subheading {
+        font-size: 4vh;
+    }
+    h1 {
+        font-size: 5vh;
+    }
+    h2 {
+        font-size: 4vh;
+    }
+    .nav-header {
+        font-size: 2vh;
+    }
+    div.resume-content {
+        font-size: 3vh;
+    }
+    div.resume-detail {
+        font-size: 3vh;
     }
 }
