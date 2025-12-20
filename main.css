@@ -1,9 +1,6 @@
 html,
 body {
-    background-color: #f2f2f2;
-    /* font-family: 'Montserrat', sans-serif; */
-    font-family: 'Roboto', sans-serif;
-    /* font-family: 'Inter var', sans-serif; */
+    font-family: 'Oswald', sans-serif;
     font-size: large;
     height: 100%;
     margin: 0;
@@ -11,78 +8,219 @@ body {
     line-height: 1.5;
 }
 
-nav {
-    background-color: #333;
+.text-primary {
+    color: #a67a05;
 }
 
-nav a {
-    border-radius: 10px;
-    color: #f2f2f2;
-    float: left;
-    margin: 10px 5px;
-    padding: 7px 8px;
-    text-align: center;
+a {
+    color: #636466;
+}
+
+.nav-link {
+    color: #fdb515;
+}
+
+a:hover, a:focus, a:active {
+    color: #a67a05;
+}
+
+.heading {
+    font-size: 5rem;
+    line-height: 5rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+.subheading {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+nav {
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.nav-item a {
     text-decoration: none;
 }
 
-nav a:hover {
-    background-color: #666;
-}
-
-nav a.active {
-    background-color: #551A8B;
-    color: #f2f2f2
-}
-
-.bio {
-    display: block;
-    flex-basis: 40%;
-}
-
-.card {
-    border-radius: 25px;
-    box-shadow: 0 4px 8px 0 #00000033;
-    display: block;
-    flex-basis: 25%;
-    margin: 20px;
-}
-
-.card-info {
-    padding: 2px 16px;
-}
-
-.card-info ul {
-    list-style: none;
-    margin: 0;
-    margin: 25px 0;
+ul.navbar {
     padding: 0;
 }
 
-.container {
-    align-items: center;
+.nav-header {
+    background-color: #000000;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 1000;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.nav-header a {
+    color: #fdb515;
+    text-decoration: none;
+}
+
+.fixed-header {
     display: flex;
-    flex-grow: 1;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.card-pic {
-    -moz-border-radius: 0px;
-    -webkit-border-radius: 25px 25px 0px 0px;
-    border-radius: 25px 25Spx 0px 0px;
-    width: 100%;
+#collapsible-header {
+    display: none;
 }
 
-.content {
-    flex-basis: 60%;
+#nav-toggler {
+    background-color: #000000;
+    margin-right: 7vw;
+    width: 2rem;
+    border-radius: 25%;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
 }
 
-.homepage-box {
+.profile-picture {
+    border-radius: 50%;
+    width: 50%;
+    margin: 0 auto;
+    border: 0.5rem solid #636466;
+}
+
+.logo {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.social-icons a {
+    display: inline-block;
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: #636466;
+    border-radius: 100%;
+    margin-right: 1rem;
+    position: relative;
+}
+
+.social-icons a:last-child {
+    margin-right: 0;
+}
+
+.social-icons a:hover {
+    background-color: #a67a05;
+}
+
+.social-icon {
+    width: 55%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: invert(100%);
+}
+
+.large-icon {
+    width: 75%
+}
+
+div.resume-item {
     display: flex;
-    flex-flow: column;
-    height: 100%;
+    flex-direction: column;
 }
 
-.nonflex-nav {
-    overflow: hidden;
+div.resume-title, div.resume-subtitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div.resume-subtitle {
+    font-style: italic;
+}
+
+div.resume-section {
+    padding: 1.5rem 7rem 5rem;
+    max-width: 75rem;
+}
+
+div.resume-content {
+    max-width: 45rem;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+}
+
+div.resume-detail {
+    text-align: right;
+    max-width: 20rem;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+}
+
+div.education-item {
+    margin-bottom: 3rem;
+}
+
+li {
+    margin-bottom: 1rem;
+}
+
+li.resume-item {
+    margin-bottom: 0;
+}
+
+section.about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (min-width: 992px) {
+    body {
+        padding-left: 17rem;
+    }
+    section {
+        min-height: 100vh;
+    }
+    nav {
+        text-align: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        width: 17rem;
+        height: 100vh;
+    }
+    .nav-header {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    nav {
+        display: none;
+    }
+    .heading {
+        padding-top: 3rem;
+    }
 }

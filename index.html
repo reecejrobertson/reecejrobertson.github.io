@@ -1,99 +1,493 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 
 <head>
-    <title>Reece Robertson's Home Page</title>
-    <link rel='stylesheet' href='main.css'>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
+    <title>Reece Robertson's Portfolio</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <meta name="description" content="Reece Robertson's Portfolio Website">
+    <meta name="author" content="Reece Robertson">
 </head>
 
-<body>
-    <div class='homepage-box'>
+<body id="page-top">
 
-        <nav>
-            <a class='active' href='./index.html'>Home</a>
-            <a href='./research.html'>Research</a>
-            <a href='ReeceRobertsonCV.pdf'>CV (PDF)</a>
-        </nav>
-
-        <div class='container'>
-            <div class='card'>
-                <img class='card-pic' src='figures/ProfessionalProfilePhoto.jpg' alt='Profile Picture'>
-                <div class='card-info'>
-                    <h2>Reece Robertson</h2>
-                    <ul>
-                        <li>
-                            Quantum Information Science PhD Candidate (ABD)
-                        </li>
-                        <li>
-                            University of Maryland, Baltimore County (UMBC)
-                        </li>
-                        <li>
-                            <a href='https://cybersecurity.umbc.edu/'>UMBC Cyber Graduate Fellow</a>
-                        </li>
-                        <li>
-                            <a href='https://qsi.umbc.edu/'>Quantum Science Institute Affiliated Graduate Student</a>
-                        </li>
-                        <li>
-                            <a href='mailto:reecerobertson@umbc.edu'>reecerobertson@umbc.edu</a>
-                        </li>
-                        <li>
-                            <a href='https://www.linkedin.com/in/reece-robertson/'>linked.com/in/reece-robertson</a>
-                        </li>
-                        <li>
-                            <a href='https://github.com/reecejrobertson'>github.com/reecejrobertson</a>
-                        </li>
-                        <li>
-                            <a href='https://x.com/ReeceJRobertson'>x.com/ReeceJRobertson</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class='bio'>
-                <h1>About</h1>
-                <p>
-                    I am a computer science PhD candidate (ABD), with an emphasis in quantum information science, at the University of Maryland, Baltimore County (UMBC).
-                    My advisor is <a href='https://physics.umbc.edu/people/faculty/deffner/'>Dr. Sebastian Deffner</a>.
-                    I am a member of the <a href='https://quthermo.umbc.edu/'>Quantum Thermodynamics Group</a> at UMBC.
-                    My research interest is quantum information theory, specifically error-assisted quantum algorithms.
-                    I am a UMBC <a href='https://cybersecurity.umbc.edu/'>Cyber Graduate Fellow</a>, an affiliated graduate student in the <a href='https://qsi.umbc.edu/'>Quantum Science Institute</a>, and a former teaching assistant for Dr. Lomonaco's Quantum Computing class.
-                </p>
-                <p>
-                    I also work part-time as a Quantum Computing Engineer, Specialist for <a href='https://www.kbr.com/en'>KBR</a>.
-                    At KBR I work on quantum algorithm design, quantum error correction, and architecture-aware algorithm compilation with resource estimation.
-                </p>
-                <h1>Selected Publications</h1>
-                <ul>
-                    <li>
-                        <strong>Introducing UNIQuE: The Unconventional Noiseless Intermediate Quantum Emulator</strong><br>
-                        Reece Robertson & Dan Ventura<br>
-                        IEEE CASCON 2025—Research Object Reviewed Badge
-                        <a href='https://arxiv.org/abs/2409.07000'>arxiv:2409.07000</a>
-                        <a href='https://github.com/reecejrobertson/UNIQuE'>UNIQuE GitHub</a>
-                    </li>
-                    <li>
-                        <strong>Simon's Period Finding on a Quantum Annealer</strong><br>
-                        Reece Robertson, Emery Doucet, Zakaria Mzaouali, Krzysztof Domino, Bartłomiej Gardas, Sebastian Deffner<br>
-                        <a href='https://arxiv.org/abs/2504.10771'>arxiv:2504.10771</a>
-                        <a href='https://www.youtube.com/watch?v=S75KxZmPv90'>INQA Seminar (YouTube)</a>
-                    </li>
-                    <li>
-                        <strong>Simon's algorithm in the NISQ cloud</strong><br>
-                        Reece Robertson, Emery Doucet, Ernest Spicer, Sebastian Deffner<br>
-                        <a href='https://www.mdpi.com/1099-4300/27/7/658'>Entropy 27, 658 (2025)</a>
-                        <a href='https://arxiv.org/abs/2406.11771'>arxiv:2406.11771</a>
-                    </li>
-                    <li>
-                        <strong>On the Baltimore Light RailLink into the quantum future</strong><br>
-                        Krzysztof Domino, Emery Doucet, Reece Robertson, Bartłomiej Gardas, Sebastian Deffner<br>
-                        <a href='https://www.nature.com/articles/s41598-025-15545-0'>Scientific Reports 15, 29576 (2025)</a>
-                        <a href='https://arxiv.org/abs/2406.11268'>arxiv:2406.11268</a>
-                    </li>
-                </ul>
-            </div>
+    <nav>
+        <div class="navbar-content">
+            <a href="#page-top">
+                <img class="profile-picture" src="figures/ProfessionalProfilePhoto.jpg" alt="Profile Picture">
+            </a>
+            <ul class="navbar">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Education">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Research">Research <br> Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Teaching">Teaching <br> Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Publications">Publications</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="#Preprints">Preprints</a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#Presentations">Presentations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Students">Students</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Press">Press</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Awards">Awards</a>
+                </li>
+            </ul>
+            <img class="logo" src="figures/umbc-logo.png" alt="UMBC Logo">
+        </div>
+    </nav>
+    <div class="nav-header">
+        <div class="fixed-header">
+            <a href="#page-top">Reece Robertson</a>
+            <!-- data-toggle="collapse" data-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation" -->
+            <button id="nav-toggler" type="button">
+                &#8801;
+            </button>
+        </div>
+        <div id="collapsible-header">
+            <ul class="navbar">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Education">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Research">Research Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Teaching">Teaching Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Publications">Publications</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="#Preprints">Preprints</a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#Presentations">Presentations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Students">Students</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Press">Press</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Awards">Awards</a>
+                </li>
+            </ul>
         </div>
     </div>
 
-</body>
+    <section class="about-section" id="about">
+        <div class="resume-section">
+            <div class="heading">
+                Reece <span class="text-primary">Robertson</span>
+            </div>
+            <div class="subheading">
+                Baltimore, Maryland, USA | <a href="mailto:reecerobertson@umbc.edu">reecerobertson@umbc.edu</a>
+            </div>
+            <p>
+                I am a computer science PhD candidate (ABD), with an emphasis in quantum information science, at the University of Maryland, Baltimore County (UMBC).
+                My advisor is <a href="https://physics.umbc.edu/people/faculty/deffner/">Dr. Sebastian Deffner</a>.
+                I am a member of the <a href="https://quthermo.umbc.edu/">Quantum Thermodynamics Group</a> at UMBC.
+                My research interest are quantum information science, error-assisted quantun algoirthms, quantum artificial intelligence, quantum networking, and quantum cryptography.
+            </p>
+            <p>
+                I also work part-time as a Quantum Computing Engineer, Specialist for <a href="https://www.kbr.com/en">KBR</a>.
+                At KBR I work on quantum algorithm design, quantum error correction, and architecture-aware algorithm compilation and resource estimation.
+            </p>
+            <div class="social-icons">
+                <a href="https://scholar.google.com/citations?user=4UlaEH8AAAAJ&hl=en&oi=ao">
+                    <img class="social-icon" src="figures/google.png" alt="Google Logo">
+                </a>
+                <a href="https://github.com/reecejrobertson">
+                    <img class="social-icon large-icon" src="figures/github.png" alt="GitHub Logo">
+                </a>
+                <a href="https://www.linkedin.com/in/reece-robertson/">
+                    <img class="social-icon" src="figures/linkedin.png" alt="Linkedin Logo">
+                </a>
+                <a href="https://x.com/ReeceJRobertson">
+                    <img class="social-icon" src="figures/x.png" alt="X Logo">
+                </a>
+                <a href="https://orcid.org/0000-0003-1064-0012">
+                    <img class="social-icon large-icon" src="figures/orcid.png" alt="ORCID Logo">
+                </a>
+            </div>
+        </div>
+    </section>
 
+    <hr>
+
+    <section id="Education">
+        <div class="resume-section">
+            <h1>Education</h1>
+            <div class="resume-item education-item">
+                <div class="resume-title">
+                    <div class="resume-content">Doctor of Philosophy in Computer Science</div>
+                    <div class="resume-detail">
+                        <span class="text-primary">May 2026</span>
+                    </div>
+                </div>
+                <div class="resume-subtitle">
+                    <div class="resume-content">University of Maryland, Baltimore County</div>
+                    <div class="resume-detail">
+                        <span class="text-primary">Baltimore, MD, USA</span>
+                    </div>
+                </div>
+            </div>
+            <div class="resume-item education-item">
+                <div class="resume-title">
+                    <div class="resume-content">Master of Science in Computer Science</div>
+                    <div class="resume-detail">
+                        <span class="text-primary">December 2024</span>
+                    </div>
+                </div>
+                <div class="resume-subtitle">
+                    <div class="resume-content">University of Maryland, Baltimore County</div>
+                    <div class="resume-detail">
+                        <span class="text-primary">Baltimore, MD, USA</span>
+                    </div>
+                </div>
+            </div>
+            <div class="resume-item education-item">
+                <div class="resume-title">
+                    <div class="resume-content">Bachelor of Science in Applied and Computational Mathematics</div>
+                    <div class="resume-detail">
+                        <span class="text-primary">April 2022</span>
+                    </div>
+                </div>
+                <div class="resume-subtitle">
+                    <div class="resume-content">Brigham Young University</div>
+                    <div class="resume-detail">
+                        <span class="text-primary">Provo, UT, USA</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="Research">
+        <div class="resume-section">
+            <h1>Research Experience</h1>
+            <div class="resume-item">
+                <div class="resume-title">
+                    <div class="resume-content">Quantum Computing Engineer, Specialist</div>
+                    <div class="resume-detail">
+                        <span class="text-primary">May 2021 — Present</span>
+                    </div>
+                </div>
+                <div class="resume-subtitle">
+                    <div class="resume-content">KBR</div>
+                    <div class="resume-detail">
+                        <span class="text-primary">Chantilly, VA, USA</span>
+                    </div>
+                </div>
+                <ul>
+                    <li class="resume-item">Developing software tool for hardware-aware quantum algorithm compilation and resource estimation.</li>
+                    <li class="resume-item">Researching quantum error correction routines and quantum search algorithms.</li>
+                    <li class="resume-item">Implementing Qiskit (Python) quantum solutions on 10+ hardware platforms for practical applications.</li>
+                    <li class="resume-item">Tied for first place and earned advanced distinction in all 2021 — 2024 IBM Quantum Challenges.</li>
+                </ul>
+            </div>
+            <div class="resume-item">
+                <div class="resume-title">
+                    <div class="resume-content">Quantum Computing Summer School Fellow</div>
+                    <div class="resume-detail">
+                        <span class="text-primary">June 2025 — August 2025</span>
+                    </div>
+                </div>
+                <div class="resume-subtitle">
+                    <div class="resume-content">Los Alamos National Laboratory </div>
+                    <div class="resume-detail">
+                        <span class="text-primary">Los Alamos, NM, USA</span>
+                    </div>
+                </div>
+                <ul>
+                    <li class="resume-item">Investigated noise-aware variational algorithm optimization using tensor networks (JAX) on HPC system.</li>
+                    <li class="resume-item">Presented results to senior researchers and laboratory directorship.</li>
+                    <li class="resume-item">Studied emergent research in quantum information science.</li>
+                </ul>
+            </div>
+            <div class="resume-item">
+                <div class="resume-title">
+                    <div class="resume-content">Undergraduate Researcher in Quantum Field Theory</div>
+                    <div class="resume-detail">
+                        <span class="text-primary">July 2020 — May 2021</span>
+                    </div>
+                </div>
+                <div class="resume-subtitle">
+                    <div class="resume-content">Brigham Young University</div>
+                    <div class="resume-detail">
+                        <span class="text-primary">Provo, UT, USA</span>
+                    </div>
+                </div>
+                <ul>
+                    <li class="resume-item">Studied interaction of elementary particles in square potential well using partial differential equations.</li>
+                    <li class="resume-item">Presented weekly on topics in quantum field theory.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+        <section id="Teaching">
+        <div class="resume-section">
+            <h1>Teaching Experience</h1>
+            <div class="resume-item">
+                <div class="resume-title">
+                    <div class="resume-content">Quantum Computing &amp; Software Development Guest Lecturer</div>
+                    <div class="resume-detail">
+                        <span class="text-primary">August 2022 — December 2024</span>
+                    </div>
+                </div>
+                <div class="resume-subtitle">
+                    <div class="resume-content">University of Maryland, Baltimore County</div>
+                    <div class="resume-detail">
+                        <span class="text-primary">Baltimore, MD, USA</span>
+                    </div>
+                </div>
+                <ul>
+                    <li class="resume-item">Lectured bimonthly to graduate and undergraduate students on quantum computation and programming.</li>
+                    <li class="resume-item">Organized symposium between 20+ computer scientists and quantum physicists.</li>
+                    <li class="resume-item">Facilitated group and individual project presentation events for 100+ students.</li>
+                    <li class="resume-item">Fielded questions regarding lecture material and community best practices.</li>
+                </ul>
+            </div>
+            <div class="resume-item">
+                <div class="resume-title">
+                    <div class="resume-content">Quantum Computing, Coding Theory, &amp; Software Development Teaching Assistant</div>
+                    <div class="resume-detail">
+                        <span class="text-primary">August 2022 — December 2024</span>
+                    </div>
+                </div>
+                <div class="resume-subtitle">
+                    <div class="resume-content">University of Maryland, Baltimore County</div>
+                    <div class="resume-detail">
+                        <span class="text-primary">Baltimore, MD, USA</span>
+                    </div>
+                </div>
+                <ul>
+                    <li class="resume-item">Mentored 300+ graduate and upper-class undergraduate students in quantum computing and coding theory.</li>
+                    <li class="resume-item">Mentored 150+ upper-class undergraduate students throughout the software development life cycle.</li>
+                    <li class="resume-item">Wrote weekly course material using LaTeX.</li>
+                    <li class="resume-item">Graded weekly assignments and provided individualized feedback to students.</li>
+                </ul>
+            </div>
+            <div class="resume-item">
+                <div class="resume-title">
+                    <div class="resume-content">Instructor for Qubit by Qubit High School Summer Program for UMBC</div>
+                    <div class="resume-detail">
+                        <span class="text-primary">July 2024</span>
+                    </div>
+                </div>
+                <div class="resume-subtitle">
+                    <div class="resume-content">University of Maryland, Baltimore County</div>
+                    <div class="resume-detail">
+                        <span class="text-primary">Baltimore, MD, USA</span>
+                    </div>
+                </div>
+                <ul>
+                    <li class="resume-item">Taught 15+ high school students foundational principles of quantum information science.</li>
+                    <li class="resume-item">Guided students in quantum software research and development projects.</li>
+                    <li class="resume-item">Fostered continuing research collaboration with an exceptional student.</li>
+                </ul>
+            </div>
+            <div class="resume-item">
+                <div class="resume-title">
+                    <div class="resume-content">Algorithm Design Lab Teaching Assistant</div>
+                    <div class="resume-detail">
+                        <span class="text-primary">August 2021 — December 2021</span>
+                    </div>
+                </div>
+                <div class="resume-subtitle">
+                    <div class="resume-content">Brigham Young University</div>
+                    <div class="resume-detail">
+                        <span class="text-primary">Provo, UT, USA</span>
+                    </div>
+                </div>
+                <ul>
+                    <li class="resume-item">Taught 90+ undergraduates in Python programming and essential programming concepts.</li>
+                    <li class="resume-item">Trained students to effectively write and debug code for 8 hours per week.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="resume-section" id="Publications">
+        <div class="resume-section">
+            <h1>Publications</h1>
+            <ul>
+                <li>
+                    <strong>Introducing UNIQuE: The Unconventional Noiseless Intermediate Quantum Emulator</strong><br>
+                    <span class="text-primary">Reece Robertson</span> &amp; Dan Ventura<br>
+                    IEEE CASCON 2025 (Accepted)
+                    [<a href="https://arxiv.org/abs/2409.07000">arxiv:2409.07000</a>]<br>
+                    <em>Awarded <a href="https://conf.researchr.org/details/cascon-2025/technical-papers-track/50/Introducing-UNIQuE-The-Unconventional-Noiseless-Intermediate-Quantum-Emulator">IEEE CASCON 2025 Research Object Reviewed Badge</a></em>
+                </li>
+                <li>
+                    <strong>Simon's Period Finding on a Quantum Annealer</strong><br>
+                    <span class="text-primary">Reece Robertson</span>, Emery Doucet, Zakaria Mzaouali, Krzysztof Domino, Bartłomiej Gardas, Sebastian Deffner<br>
+                    <a href="https://ieeexplore.ieee.org/document/11250344">IEEE QCE 65121, 00030 (2025)</a>
+                    [<a href="https://arxiv.org/abs/2504.10771">arxiv:2504.10771</a>]<br>
+                    <em>Presented for UMBC QSI and the <a href="https://www.youtube.com/watch?v=S75KxZmPv90">INQA Seminar Series (YouTube)</a></em>
+                </li>
+                <li>
+                    <strong>On the Baltimore Light RailLink into the quantum future</strong><br>
+                    Krzysztof Domino, Emery Doucet, <span class="text-primary">Reece Robertson</span>, Bartłomiej Gardas, Sebastian Deffner<br>
+                    <a href='https://www.nature.com/articles/s41598-025-15545-0'>Scientific Reports 15, 29576 (2025)</a>
+                    [<a href='https://arxiv.org/abs/2406.11268'>arxiv:2406.11268</a>]<br>
+                    <em>Featured on <a href="https://umbc.edu/stories/quantum-on-track-for-train-scheduling/">UMBC Stories</a>, <a href="https://www.youtube.com/watch?v=xWKRhIeoCoA">UMBCtube</a>, and others</em>
+                </li>
+                <li>
+                    <strong>Implementing Grover's Algorithm On NISQ Chips</strong><br>
+                    <span class="text-primary">Reece Robertson</span>, Colburn Riffel, Matthew Slodov, Peter Hendrickson<br>
+                    <a href="https://ieeexplore.ieee.org/document/11235338">IEEE NAECON 65708, 11235338 (2025)</a>
+                </li>
+                <li>
+                    <strong>Steane and Iceberg Code Implementation on Toffoli Gates</strong><br>
+                    Colburn Riffel, <span class="text-primary">Reece Robertson</span>, Matthew Slodov, Peter Hendrickson<br>
+                    <a href="https://ieeexplore.ieee.org/document/11235387">IEEE NAECON 65708, 11235387 (2025)</a>
+                </li>
+                <li>
+                    <strong>Simon's algorithm in the NISQ cloud</strong><br>
+                    <span class="text-primary">Reece Robertson</span>, Emery Doucet, Ernest Spicer, Sebastian Deffner<br>
+                    <a href='https://www.mdpi.com/1099-4300/27/7/658'>Entropy 27, 658 (2025)</a>
+                    [<a href='https://arxiv.org/abs/2406.11771'>arxiv:2406.11771</a>]<br>
+                    <em>Poster at Quantum Thermodynamics Conference 2024 and Quantum Leap Career Nexus 2024</em>
+                </li>
+                <li>
+                    <strong>Implementing a High-Performance Quantum Computing Emulator</strong><br>
+                    <span class="text-primary">Reece Robertson</span><br>
+                    <a href='https://scholarsarchive.byu.edu/studentpub_uht/218'>BYU Undergraduate Honors Thesis 218</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- <section class="resume-section" id="Publications">
+        <div class="resume-section">
+            <h1>Publications</h1>
+            <ul>
+            </ul>
+        </div>
+    </section>
+
+    <hr> -->
+
+    <section class="resume-section" id="Presentations">
+        <div class="resume-section">
+            <h1>Presentations</h1>
+            <ul>
+                <li><strong>Introduction to Quantum Algorithms</strong>, Guest Lecture for Dr. Don Engel (UMBC), <span class="text-primary">November 2024 &amp; 2025</span></li>
+                <li><strong>Simon's Period Finding on a Quantum Annealer</strong>, UMBC Quantum Science Institute, <span class="text-primary">September 2025</span></li>
+                <li><strong>Simon's Period Finding on a Quantum Annealer</strong>, Poster at Maryland Quantum-Thermodynamics Symposium 2025, <span class="text-primary">May 2025</span></li>
+                <li><strong>Simon's Period Finding on a Quantum Annealer</strong>, <a href="https://www.youtube.com/watch?v=S75KxZmPv90">INQA Seminar (YouTube)</a>, <span class="text-primary">May 2025</span></li>
+                <li><strong>Introduction to Quantum Error Correction</strong>, Guest Lecture for Dr. Matthew Gibson (UTSA), <span class="text-primary">April 2025</span></li>
+                <li><strong>UMBC Combined Quantum Thermodynamics &amp; Quantum Computation Research Symposium</strong>, Organizer &amp; Presenter, <span class="text-primary">October 2024</span></li>
+                <li><strong>Simon's algorithm in the NISQ cloud</strong>, Poster at Quantum Leap Career Nexus 2024, <span class="text-primary">October 2024</span></li>
+                <li><strong>Simon's algorithm in the NISQ cloud</strong>, Poster at Quantum Thermodynamics Conference 2024, <span class="text-primary">August 2024</span></li>
+            </ul>
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="resume-section" id="Students">
+        <div class="resume-section">
+            <h1>Students</h1>
+            <h2>Undergraduate Researchers</h2>
+            <ul>
+                <li><strong>Sejal Patel</strong>, Advisor, <span class="text-primary">2025-present</span></li>
+                <li><strong>Monty Yates</strong>, Advisor, <span class="text-primary">2025-present</span></li>
+                <li><strong>Michael Moody</strong>, Advisor, <span class="text-primary">2025-present</span></li>
+                <li><strong>Azzan Porter</strong>, Advisor, <span class="text-primary">2024-2025</span></li>
+            </ul>
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="resume-section" id="Press">
+        <div class="resume-section">
+            <h1>Press</h1>
+            <ul>
+                <li><strong><a href="https://www.youtube.com/watch?v=xWKRhIeoCoA">Quantum on Track: Quantum Computing for Urban Train Scheduling</a></strong>, UMBCtube (YouTube), <span class="text-primary">October 2025</span></li>
+                <li><strong><a href="https://quantumcampus.beehiiv.com/p/pulling-the-rug-out-no-grfp-for-2nd-year-grad-students">Model Trains</a></strong>, Quantum Campus, <span class="text-primary">October 2025</span></li>
+                <li><strong><a href="https://www.eurekalert.org/news-releases/1098748">Rethinking train delays with quantum power</a></strong>, EurekAlert!, <span class="text-primary">September 2025</span></li>
+                <li><strong><a href="https://scienmag.com/harnessing-quantum-power-to-revolutionize-train-delay-analysis/">Harnessing Quantum Power to Revolutionize Train Delay Analysis</a></strong>, Scienmag, <span class="text-primary">September 2025</span></li>
+                <li><strong><a href="https://www.miragenews.com/quantum-tech-targets-train-delay-solutions-1535566/">Quantum Tech Targets Train Delay Solutions</a></strong>, Mirage News, <span class="text-primary">September 2025</span></li>
+                <li><strong><a href="https://winfuture.de/news,153710.html">Zugverspätungen: Die Quantenpyhsik hat im Chaos ein Muster erkannt</a></strong>, WinFuture, <span class="text-primary">September 2025</span></li>
+                <li><strong><a href="https://t3n.de/news/zugverspaetungen-quantencomputer-im-bahn-chaos-1708582/">Zugverspätungen: Wie Quantencomputer im Bahn-Chaos verborgene Muster entdecken</a></strong>, t3n, <span class="text-primary">September 2025</span></li>
+                <li><strong><a href="https://www.nipponese.news/%e5%88%97%e8%bb%8a%e3%82%92%e5%86%8d%e8%80%83%e3%81%99%e3%82%8b%e3%81%93%e3%81%a8%e3%81%a7%e3%80%81%e9%87%8f%e5%ad%90%e9%9b%bb%e5%8a%9b%e3%81%ab%e3%82%88%e3%82%8b%e9%81%85%e5%bb%b6/">列車を再考することで、量子電力による遅延</a></strong>, Nipponese, <span class="text-primary">September 2025</span></li>
+                <li><strong><a href="https://umbc.edu/stories/quantum-on-track-for-train-scheduling/">Quantum on track</a></strong>, UMBC Stories, <span class="text-primary">September 2025</span></li>
+                <li><strong><a href="https://quantumzeitgeist.com/adiabatic-implementation-of-simons-algorithm-solves-large-scale-problems/">Adiabatic Implementation of Simon's Algorithm Solves Large-Scale Problems</a></strong>, Quantum Zeitgeist, <span class="text-primary">April 2025</span></li>
+                <li><strong><a href="https://honors.byu.edu/story/interdisciplinary-thinking/opposites-attract">Opposites Attract</a></strong>, Brigham Young University Honors Program, <span class="text-primary">November 2021</span></li>
+                <li><strong><a href="https://www.facebook.com/byu.math/posts/meet-reece-robertson-besides-math-reece-loves-reading-he-is-currently-reading-th/10158808344338071/">Meet Reece Robertson</a></strong>, Brigham Young University Mathematics Department, <span class="text-primary">September 2021</span></li>
+            </ul>
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="resume-section" id="Awards">
+        <div class="resume-section">
+            <h1>Awards</h1>
+            <ul>
+                <li><strong><a href="https://conf.researchr.org/details/cascon-2025/technical-papers-track/50/Introducing-UNIQuE-The-Unconventional-Noiseless-Intermediate-Quantum-Emulator">IEEE Research Object Reviewed Badge</a> for <a href="https://github.com/reecejrobertson/UNIQuE">UNIQuE Open-Source Software Package</a></strong>, IEEE CASCON 2025, <span class="text-primary">November 2025</span></li>
+                <li><strong>Graduate Fellowship</strong>, <a href="https://qsi.umbc.edu/">UMBC Quantum Science Institute</a>, <span class="text-primary">August 2025 — August 2026</span></li>
+                <li><strong>Graduate Fellowship</strong>, <a href="https://cybersecurity.umbc.edu/">UMBC Cybersecurity Institute</a>, <span class="text-primary">January 2025 — December 2025</span></li>
+                <li><strong>Full Tuition Academic Scholarship</strong>, Brigham Young University, <span class="text-primary">January 2020 — April 2022</span></li>
+                <li><strong><a href="https://science.byu.edu/deans-list-winter-2017.pdf">Dean's List</a></strong>, BYU College of Physical and Mathematical Sciences, <span class="text-primary">Winter 2017</span></li>
+            </ul>
+        </div>
+    </section>
+
+    <script>
+        var nav = document.getElementById("collapsible-header")
+        var button = document.getElementById("nav-toggler");
+        button.addEventListener("click", function() {
+            this.classList.toggle("active");
+            if (nav.style.display === "block") {
+                nav.style.display = "none";
+            } else {
+                nav.style.display = "block";
+            }
+        });
+        var items = document.getElementsByClassName("nav-link");
+        for (var i = 0; i < items.length; i++) {
+            items[i].addEventListener("click", function() {
+                nav.style.display = "none";
+            })
+        };
+    </script>
+
+</body>
 </html>
