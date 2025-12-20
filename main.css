@@ -66,12 +66,13 @@ ul.navbar {
 
 .nav-header {
     background-color: #000000;
-    padding: 1rem;
+    padding: 2rem;
     position: fixed;
     top: 0;
     width: 100vw;
     z-index: 1000;
     font-weight: 800;
+    font-size: 2rem;
     text-transform: uppercase;
 }
 
@@ -92,11 +93,12 @@ ul.navbar {
 
 #nav-toggler {
     background-color: #000000;
-    margin-right: 7vw;
-    width: 2rem;
+    margin-right: 10vw;
+    width: 3rem;
+    height: 3rem;
     border-radius: 25%;
     color: #fff;
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: 600;
 }
 
@@ -220,7 +222,10 @@ section.about-section {
     nav {
         display: none;
     }
+    div.resume-section {
+        padding-top: 8rem;
+    }
     .heading {
-        padding-top: 3rem;
+        padding-top: 2rem;
     }
 }
